@@ -6,10 +6,11 @@
     width: 400px;
     position: relative;
     animation: moveTrain 5s linear infinite;
+    animation-play-state: paused;
   }
   
   @keyframes moveTrain {
-    0% { left: -200px; }
+    0% { left: 0px; }
     100% { left: 100%; }
   }
   
@@ -45,7 +46,7 @@
 
   
   <img src="train.png" alt="Train" class="train" id="train" height="250">
-  <h2 style="color: blue;">Click the following buttons to handle train animation</h2>
+  <h2 style="color: blue; text-align: center;">Click the following buttons to handle train animation</h2>
   <div class="button-container">
     <button onclick="startAnimation()">Start</button>
     <button onclick="stopAnimation()">Stop</button>
